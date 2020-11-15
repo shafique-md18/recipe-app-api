@@ -1,8 +1,17 @@
 # recipe-app-api
-A simple recipe app api using django-rest-api
+A simple recipe app api using django, django-rest-api, docker with unit tests.
 
-Build Project: Install docker and docker compose and use the included Dockerfile to
+## Build Project
+Install docker and docker compose and use the included Dockerfile to
 get the dependencies and install the project
 
-Test: docker-compose run app sh -c "python manage.py test && flake8"
-Run: docker-compose up
+## Start development server
+```
+docker-compose up
+```
+
+
+## Testing
+```
+docker-compose run app sh -c "python manage.py test && flake8"
+```
